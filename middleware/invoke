@@ -4,6 +4,6 @@
     -u R-3.4.0 \
     -u wrwroxy-0.1 \
     -w "none" \
-    -c "xview -fullscreen -onroot @tool/data/Rlogo-1.png" \
-    -c "wrwroxy --listenHost 0.0.0.0 --listenPort 8000 --forwardHost 127.0.0.1 --forwardPort 8001 --stream-log --logfile /dev/null" \
+    -c "xview -fullscreen -onroot \${R_INSTALL_DIR}/lib/R/library/png/img/Rlogo.png" \
+    -c "wrwroxy --stream-log --logfile /dev/null" \
     -C "wtdensityPlain --docroot @tool/bin --http-addr 127.0.0.1 --http-port 8001"
